@@ -54,13 +54,15 @@
 .header .util_area a {
     font-size: 28px;
     font-weight: 800;
+    color: #514271;
 }
 
 .header .util_area a .feather {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
     margin: 0 16px 0 0;
     vertical-align: middle;
+    color: #514271;
 }
 
 .header .mbtn {
@@ -481,6 +483,7 @@
 
 .company .inner .left figure img {
     height: 620px;
+    object-fit: cover;
 }
 
 .company .inner .right {
@@ -651,7 +654,7 @@
 
 .main_content .inner {
     display: flex;
-    gap: 30px;
+    gap: 90px;
 }
 
 .main_content .inner>* {
@@ -663,19 +666,26 @@
 }
 
 .main_content .inner .left .ceo {
-    display: block;
-    font-size: 18px;
+    display: inline-block;
+    font-size: 20px;
     font-weight: 700;
-    margin: 0 0 16px 0;
+    margin: 0 8px 16px 0;
     text-align: center;
 }
 
+.main_content .inner .left .desc strong p {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 800;
+    font-size: 28px;
+}
+
 .main_content .inner .left .desc p {
-    display: block;
     text-align: left;
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: 500;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 400;
     word-break: keep-all;
 }
 
@@ -699,7 +709,6 @@
 .main_content .inner .right .img_box {
     position: relative;
     margin: 0 0 20px 0;
-    text-align: center;
 }
 
 .main_content .inner .right .img_box span {
@@ -711,29 +720,49 @@
     font-size: 48px;
 }
 
+.dl {
+    display: block;
+    border: none;
+    margin: 0 0 100px 0;
+}
+
 .main_content .inner .right .img_box img {
     height: 200px;
     object-fit: cover;
 }
 
 .main_content .inner .right>p {
-    display: block;
-    padding: 0 0 200px 0;
-
-    text-align: center;
     word-break: keep-all;
-    line-height: 1.4;
-    font-size: 18px;
-    font-weight: 500;
+    line-height: 24px;
+    margin: 0 0 16px 0;
+    color: #444;
+    font-size: 16px;
+}
+
+.main_content .inner .right>.pt {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.main_content .inner .right>.st {
+    font-size: 16px;
+    nav-down: 700;
+    line-height: 1.8;
+}
+
+.main_content .inner .right>p strong {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .main_content .inner .right span {
     display: inline-block;
-    margin: 16px 0 0 0;
+    margin: 8px 0 0 0;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
 }
-
 
 @media (max-width:768px) {
     .main_content {
