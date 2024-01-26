@@ -88,8 +88,23 @@ $('.company .pf_left_slide').slick({
 $('.company .pf_right_slide').slick({
     arrows: false,
     slidesToShow: 4,
-
-    asNavFor: '.company .pf_left_slide'
+    asNavFor: '.company .pf_left_slide',
+    responsive:[
+        {
+            breakpoint: 1200,
+            settings : {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        } ,
+        {
+            breakpoint: 769,
+            settings : {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }            
+    ],
 });
 
 $('.company .bt_left').on('click', function () {
@@ -99,5 +114,9 @@ $('.company .bt_left').on('click', function () {
 $('.company .bt_right').on('click', function () {
     $('.company .pf_right_slide').slick('slickNext');
 });
+
+$('.mbtn').on('click', ()=> {
+    $('.header').toggleClass('active');
+    });
 
 }); 
